@@ -1,25 +1,33 @@
+
 #track-name {
-  transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease;
 }
 
 .track-updated {
-  animation: fade-in 0.4s ease;
+	animation: fade-in 0.4s ease;
 }
 
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
+	from { opacity: 0; transform: translateY(4px); }
+	to { opacity: 1; transform: translateY(0); }
 }
 
 #next-button, #prev-button, #song-button {
-  border-radius: 50px;
-  font-weight: 600;
-  padding: 0.6em 1.4em;
-  background-color: #3c096c;
+	border-radius: 50px;
+	font-weight: 600;
+	padding: 0.6em 1.4em;
+	background-color: #3c096c;
+}
+
+#surprise-button{
+	border-radius: 50px;
+	font-weight: 600;
+	padding: 0.6em 1.4em;
+	background-color: #192a51;
 }
 
 #prev-button, #next-button {
-  min-width: 3.5em;
+	min-width: 5.5em;
 }
 
 h1{
@@ -28,16 +36,17 @@ h1{
 }
 
 .now-playing-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #0B1B3A 30%, #C9A45C 31%, #C9A45C 35%, transparent 36%);
-  animation: spin 3s linear infinite;
-  margin-right: 8px;
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: radial-gradient(circle, #0B1B3A 20%, #edae49 30%, white 90%, transparent 91%);
+	animation: spin 3s linear infinite;
+	margin-right: 8px;
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
 }
+

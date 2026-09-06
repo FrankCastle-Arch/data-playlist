@@ -17,6 +17,7 @@ function showSong() {
 	let namel = document.getElementById("track-name");
 	namel.textContent = song["Track Name"];
     document.getElementById("track-facts").textContent = song.Artist;
+	document.getElementById("track-position").textContent = "Track " + (index + 1) + " of " + songs.length;
 
     
 	namel.classList.remove("track-updated");
@@ -46,4 +47,16 @@ nextButton.addEventListener("click", function () {
 prevButton.addEventListener("click", function () {
     if (songs.length === 0) return; 
     showPrevSong();
+});
+
+let surpriseButton = document.getElementById("surprise-button");
+
+function showRandomSong() {
+    index = Math.floor(Math.random() * songs.length);
+    showSong();
+}
+
+surpriseButton.addEventListener("click", function () {
+    if (songs.length === 0) return;
+    showRandomSong();
 });
